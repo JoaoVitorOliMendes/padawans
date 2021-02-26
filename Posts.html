@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/CSS"
+href="CSS/ESTILO.css">
+<link rel="stylesheet" type="text/CSS"
+href="CSS/bootstrap.min.css">
+  <meta charset="UTF-8"; type=text/html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts</title>
+</head>
+
+<body class="body">
+<!--NavBar-->
+<div class="fluid-container">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ml-4">
+          <a class="a nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item ml-4">
+          <a class="a nav-link active">Posts</a>
+        </li>
+        <li class="nav-item ml-4">
+          <a class="a nav-link" href="Albuns.html">Albums</a>
+        </li>
+        <li class="nav-item ml-4">
+          <a class="a nav-link" href="Todos.html">Todos</a>
+        </li>
+      </ul>
+  </nav>
+</div>
+
+<div class="container mt-5">
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Posts</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td>UserId</td>
+                <td>Id</td>
+                <td>Title</td>
+                <td>Post</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--Script-->
+<script src="JS/main.js"></script>
+<script>listarposts()</script>
+</body>
+</html>

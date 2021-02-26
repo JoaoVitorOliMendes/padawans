@@ -1,0 +1,59 @@
+.grid
+{
+    width: 95%;
+    height: 30%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	"box1 box2 box3"
+}
+.box1
+{
+    background-color: dimgrey;
+    grid-area: box1;
+}
+.box2
+{
+    background-color: dimgrey;
+    grid-area: box2;
+}
+.box3
+{
+    background-color: dimgrey;
+    grid-area: box3;
+}
+.grid div
+{
+    margin: 0 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: black 6px 6px;
+    height: 100%;
+}   
+.spanlink
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 6vw;
+    color: white;
+}
+a:hover span
+{
+    color: black;
+    transition: 0.5s ease;
+}
+.body
+{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+    margin: 0;
+}
+.grid .a
+{
+    text-decoration: none;
+}
