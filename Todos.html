@@ -34,7 +34,9 @@ href="CSS/bootstrap.min.css">
 </div>
 
 <div class="container mt-5">
-    <table class="table table-dark">
+  <button type="button" class="btn-primary mb-3" id="useridbtn" onclick="useriddecrescente(0)">User Id decrescente</button>
+  <button type="button" class="btn-primary mb-3" id="idbtn" onclick="iddecrescente(1)">Id decrescente</button>
+    <table class="table table-dark" id="table">
         <thead>
             <tr>
                 <th>Todos</th>
@@ -53,6 +55,32 @@ href="CSS/bootstrap.min.css">
 
 <!--Script-->
 <script src="JS/main.js"></script>
-<script>listartodos()</script>
+<script>
+listartodos()
+function idcrescente(nm)
+{
+  sorttablec(nm);
+  document.getElementById("idbtn").setAttribute('onclick',"iddecrescente(1)");
+  document.getElementById("idbtn").innerHTML = "Id decrescente";
+}
+function useridcrescente(nm)
+{
+  sorttablec(nm);
+  document.getElementById("useridbtn").setAttribute('onclick',"useriddecrescente(0)");
+  document.getElementById("useridbtn").innerHTML = "User Id decrescente";
+}
+function iddecrescente(nm)
+{
+  sorttabled(nm);
+  document.getElementById("idbtn").setAttribute('onclick',"idcrescente(1)");
+  document.getElementById("idbtn").innerHTML = "Id crescente";
+}
+function useriddecrescente(nm)
+{
+  sorttabled(nm);
+  document.getElementById("useridbtn").setAttribute('onclick',"useridcrescente(0)");
+  document.getElementById("useridbtn").innerHTML = "User Id crescente";
+}
+</script>
 </body>
 </html>
